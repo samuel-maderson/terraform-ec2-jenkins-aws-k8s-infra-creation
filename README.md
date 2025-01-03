@@ -5,6 +5,16 @@ Helpful Terraform Links:
 - [Resource: aws_security_group](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group)
 - [Resource: aws_instance](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance)
 
+# Jenkins
+
+## Install these plugins
+- Docker Pipeline
+- AWS Credentials
+- ECR
+- Kubernetes CLI
+
+# Terraform
+
 ## Step 0: Initialize Terraform
 ```
 terraform init
@@ -26,7 +36,7 @@ chmod 400 <keypair>
 ssh -i <keypair> ec2-user@<public_dns>
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-## Some Useful Commands
+# K8S - Some Useful Commands
 ```
 #To get context information of kubernetes cluster
 cat /home/ec2-user/.kube/config 
