@@ -57,7 +57,7 @@ data "aws_ami" "amazon_linux" {
 
   filter {
     name   = "name"
-    values = ["*al2023-ami-2023.5.*-kernel-6.1-x86_64*"]
+    values = ["*al2023-ami-2023.6.20241212.0-kernel-6.1-x86_64*"]
   }
 
   filter {
@@ -118,7 +118,7 @@ EOF
 
 resource "aws_instance" "web" {
   ami             = data.aws_ami.amazon_linux.id
-  instance_type   = "t2.xlarge" 
+  instance_type   = "t3.medium" 
   key_name        = var.key_name
   iam_instance_profile = "${aws_iam_instance_profile.test_profile.name}"
   security_groups = [aws_security_group.jenkins_sg.name]
