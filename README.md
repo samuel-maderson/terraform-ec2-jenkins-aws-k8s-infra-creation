@@ -36,7 +36,7 @@ chmod 400 <keypair>
 ssh -i <keypair> ec2-user@<public_dns>
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 ```
-# K8S - Some Useful Commands
+# Some Useful Commands
 ```
 #To get context information of kubernetes cluster
 cat /home/ec2-user/.kube/config 
